@@ -1,0 +1,129 @@
+<!-- GRUPO 27 - "AKATSUKI"
+INTEGRANTES: MAURO NICOLAS RODRIGUEZ DNI:35397022
+             DARLIE ALEXANDRA ANTUNEZ DNI:95332183   
+             MAGALI ESTEFANIA GONZALEZ DNI:32704930   
+*en el link de CONTACTO se encuentra el formulario con validacion y la API.
+*en los links PIEZAS, PLATOS CALIENTES Y POSTRES se encuentran los puntos de corte para distintos 
+dispositivos moviles.
+*a su vez, en los 3 links mencionados en el punto anterior, se puede visualizar las animaciones/
+transformaciones cuando pasa el cursor sobre las imagenes de los distintos platos. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/3ba9bc2fcd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estiloscontacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,500&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,500&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,500&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,500&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Taberu! - Contacto</title>
+    <link class="icon" rel="icon" href="img/t.png">
+    
+</head>
+<body>
+    <div class="padre">
+        <nav class="menu">
+            <div class="margen-interno">
+                <div class="logo">
+                    <a href="taberu.html">Taberu!</a>
+                </div>
+                <div class="nav">
+                    <a class="piezas" href="piezas.html">PIEZAS</a>
+                    <a class="calientes" href="calientes.html">PLATOS CALIENTES</a>
+                    <a class="postres" href="postres.html">POSTRES</a>
+                </div>
+                <div class="social">
+                    <a class="facebook" href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="what" href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="twitter" href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a class="youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </nav>
+        <header class="header">
+        </header>
+        <section>
+            <h3 class="telefono opinion"><b>TELÉFONO DE CONTACTO:</b> 1168501787</h3>
+            <h3 class="email opinion"><b>E-MAIL DE CONTACTO:</b> taberu@gmail.com</h3>
+            <form action="https://formsubmit.co/m.n.rod293@gmail.com" class="formulario" id="myform" @submit="validateForm" method="post">
+                <h3 class="opinion"><b>SUGERENCIAS</b></h3>
+                <p>En Taberu! tu opinión nos importa! Por eso, estamos abiertos a sugerencias sobre cómo mejorar nuestros productos y servicios al cliente. Por favor, no dejes de escribirnos. ¡Muchas gracias!</p>
+                
+                <p v-if="errors.length">
+                    <b class="error">Por favor, corregir el/los siguiente/s error/es: </b>
+                
+                    <p class="error" v-for="error in errors">{{ error }}</p>
+                    
+                </p>
+
+                Nombre: <input class="inputs" type="text" v-model="nombre" name="NOMBRE" placeholder="Ingresar nombre"><br>
+                Apellido: <input class="inputs" type="text" name="APELLIDOS" v-model="apellidos" placeholder="Ingresar apellido/s"><br>
+                E-mail: <input class="inputs" type="text" name="E-MAIL" v-model="email" placeholder="Ingresar email"><br>
+                Teléfono: <input class="inputs" type="number" name="TELEFONO" v-model="telefono" placeholder="Ingresar teléfono"><br>
+                Sugerencia/opinión: <input class="" type="text" name="SUGERENCIA" v-model="sugerencia" cols="30" rows="" placeholder="Ingresar sugerencia/opinión"></textarea>
+                
+                <input class="opinion" type="submit" value="Enviar" ><br>
+            </form>
+            <div class="container">
+            <table class="tabla">
+            <thead>
+                <tr>
+                    <th class="name">NOMBRE</th>
+                    <th class="opinion">SUGERENCIAS/OPINIONES</th>
+                </tr>
+            </thead>
+            <tbody  id="respuesta">
+        
+            </tbody>
+            </table>
+            </div>
+        </form> 
+        </section>    
+        <footer class="footer margen-interno">
+            <div class="footer-row">
+                <div class="footer-links">
+                    
+                        <a class="contacto" href="contacto.html">CONTACTO</a>
+                        <a href="#">FRANQUICIAS</a>
+                        <a href="#">LEGALES</a>
+                        <a href="#">RECLAMOS</a>
+                        
+                </div>    
+                <div class="footersocial">
+                        <a class="facebook" href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="what" href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a class="twitter" href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a class="youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                
+                <h5 class="desarrollado">Desarrollado por Mauro Nicolas Rodriguez - Darlie Alexandra Antunez - Magali Estefania Gonzalez</h5>
+                <h5 class="copy">Copyright © 2008-2023 Taberu! - Todos los derechos Reservados - Términos y Condiciones - Politica de Privacidad - Legales   info@taberu.com.ar</h5>
+                
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="form.js"></script>
+</body>
+
+
+</html>

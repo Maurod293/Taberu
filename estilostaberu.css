@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a:hover{
+    color:#343434 /*para cambiar color cuando pasas el cursor */
+}
+    
+.padre{
+    display: grid;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    grid-auto-flow: dense;
+    grid-template-columns: 50%;
+    grid-template-rows: 0.2fr 1.2fr 1.8fr 0.8fr;
+    grid-template-areas: 
+        "menu menu menu menu"
+        "header header header header"
+        "comida comida comida comida"
+        "footer footer footer footer";
+}
+.menu{
+    grid-area: menu;
+    background:  #1c2833;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-attachment: contain;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}   
+    .logo{
+        flex: 1 1 auto; 
+        font-size: 30px;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-family: 'Merienda', cursive;
+        align-items: center; 
+        
+    }
+    .logo a{
+        color: #ebedef;
+        text-decoration: none; /*para sacar el subrayado */
+        font-size: 80px; /*para cambiar el tamaño de la letra*/
+        align-items: center;
+    }
+    .nav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        flex: 5 1 auto;
+    }
+    .nav a{
+        display: flex;
+        justify-items: center;
+        color:  #ebedef ;
+        font-size: 15px;
+        text-transform: uppercase; /*para que las letras sean mayusculas */
+        padding: 10px;
+        letter-spacing: 1px; /*para que las letras se separen */
+        align-items: center;
+       
+    }
+    .nav a:hover{
+        color:  #808b96;
+    }
+    .social{
+        grid-area: social;
+        font-size: 28px; 
+        color: pink;
+        margin: 0.5rem;
+        padding: 0 5px;  
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 20px; /*para separar los iconos*/
+    }
+    .social a{
+        color:  #ebedef;
+        font-size: 30px; /* tamaño de los iconos*/
+        text-transform: uppercase; /*para que las letras sean mayusculas */
+        padding: 0 10px;
+        letter-spacing: 2px; /*para que las letras se separen */
+    }
+    
+    .social a:hover{
+        color: #808b96;
+    }
+
+.header{
+    height: 920px;
+    width: 1400px;
+    grid-area: header;
+    text-align: justify;
+    background: url(img/grande8.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.texto-principal{
+    height: 580px; 
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+    padding: -20px;
+    font-size: 30px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+    color: #FA8072;
+}
+section{
+    width: 5%;
+    grid-area: comida;
+    display: grid; 
+    grid-template-areas: 
+    "bienvenidos"
+    "logo"
+    "parrafo";
+    grid-gap: 5px;
+    align-items: center;
+
+}
+.bienvenidos{
+    grid-area: bienvenidos;
+    text-align: center;
+    background: salmon;
+    display: block;
+    padding: 1px;
+    color: #2b2d30;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+}
+.logo-sec{
+    grid-area: logo;
+    flex: 1 1 auto; 
+    font-size: 30px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+    align-items: center;
+    text-align: center;
+}
+.parrafo{
+    grid-area: parrafo;
+    text-align: center;
+}
+.comida{
+    margin: 10px auto;
+    width: 90%;
+    border: 1px solid #333;
+    
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #333;
+    width: 1000px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-size: 13px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+
+}
+.precio{
+    font-size: 50px;
+    color: aqua;
+}
+.margen-interno{
+    padding: 0 50px;
+    
+}
+.titulo{
+    background: salmon;
+    display: block;
+    padding: 1px;
+    color: #2b2d30;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+
+}
+.producto{
+    margin: 25px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+}
+.descripcion{
+    font-size: 13px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+
+}
+.precios{
+    font-size: 40px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+
+}
+.boton-precio{
+    background: #1c2833;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 10px;
+    color: salmon;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Merienda', cursive;
+
+    
+}
+.imagen{
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: groove;
+    transition: transform 3s;
+}
+.imagen:hover{
+    transform: scale(1.20);
+}
+.boton-precio:hover{
+    background: rgb(247, 100, 84);
+}
+.footer{
+    font-family: 'Times New Roman', Times, serif;
+    padding: px;
+    background: #1c2833;
+    grid-area: footer;
+    height: 210px;
+}
+.footer-links{
+    padding: 30px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.footer-links a{
+    color:  #ebedef ;
+    font-size: 15px;
+    text-transform: uppercase; /*para que las letras sean mayusculas */
+    padding: 0 10px;
+    letter-spacing: 2px; /*para que las letras se separen */
+}
+.footer-links a:hover{
+    color: #808b96;
+}
+.footersocial{
+    padding: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.footersocial a{
+    color:  #ebedef ;
+    font-size: 25px;
+    text-transform: uppercase; /*para que las letras sean mayusculas */
+    padding: 0 10px;
+    letter-spacing: 2px; /*para que las letras se separen */
+}
+.footersocial a:hover{
+    color: #808b96;
+}
+h5{
+    position: relative;
+    bottom: -50px;
+}
+.desarrollado{
+    color: #ebedef;
+    position: relative;
+    text-align: center;    
+}
+.copy{
+    color: #ebedef;
+    text-align: center;
+    position: relative;
+}   
