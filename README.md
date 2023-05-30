@@ -20,7 +20,7 @@ transformaciones cuando pasa el cursor sobre las imagenes de los distintos plato
 
 DIVISION DE TAREAS:
 MAURO RODRIGUEZ: paginas responsivas, creacion del formulario y de la tabla de sugerencias con el json, diseño de
-los menus con su descripcion y precio, contactos y seleccionador de imagenes e iconos.
+los menus con su descripcion y precio, contactos y seleccionador de imagenes e iconos, encargado de las animaciones/transformaciones.
 
 DARLIE ANTUNEZ: diseño del body, colores, creacion del nombre de la pagina y sus distintas secciones (piezas, platos calientes,
 y postres) eleccion de la fuentes.
