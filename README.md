@@ -4,6 +4,7 @@ GRUPO 27 - "AKATSUKI"
 INTEGRANTES: MAURO NICOLAS RODRIGUEZ DNI:35397022 (REPRESENTANTE)
              DARLIE ALEXANDRA ANTUNEZ DNI:95332183   
              MAGALI ESTEFANIA GONZALEZ DNI:32704930  (ABANDONO HACE 3 SEMANAS) 
+
 Nuestra pagina web se dedica a la comercialización/venta de comida del tipo oriental (SUSHI). 
 Contiene 5 paginas con contenido (Taberu!, piezas, platos calientes, postres y contactos). 
 En la pagina principal podemos encontrar una bienvenida al cliente y un breve párrafo con la misión de nuestra empresa. 
