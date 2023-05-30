@@ -1,6 +1,6 @@
 # taberu.github.io
 
-<!-- GRUPO 27 - "AKATSUKI"
+GRUPO 27 - "AKATSUKI"
 INTEGRANTES: MAURO NICOLAS RODRIGUEZ DNI:35397022 (REPRESENTANTE)
              DARLIE ALEXANDRA ANTUNEZ DNI:95332183   
              MAGALI ESTEFANIA GONZALEZ DNI:32704930  (ABANDONO HACE 3 SEMANAS) 
@@ -16,7 +16,7 @@ teléfono y e-mail de contacto y, algunas sugerencias hechas por clientes.
 *en los links PIEZAS, PLATOS CALIENTES Y POSTRES se encuentran los puntos de corte para distintos 
 dispositivos moviles.
 *a su vez, en los 3 links mencionados en el punto anterior, se puede visualizar las animaciones/
-transformaciones cuando pasa el cursor sobre las imagenes de los distintos platos. -->
+transformaciones cuando pasa el cursor sobre las imagenes de los distintos platos.
 
 DIVISION DE TAREAS:
 MAURO RODRIGUEZ: paginas responsivas, creacion del formulario y de la tabla de sugerencias con el json, diseño de
